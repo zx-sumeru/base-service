@@ -6,7 +6,14 @@
     <groupId>com.example</groupId>
     <artifactId>base-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>ms-eureka</module>
+        <module>ms-config</module>
+        <module>ms-hystrix</module>
+    </modules>
+    <packaging>pom</packaging>
+
+
 
     <name>base-service</name>
     <description>Demo project for Spring Boot</description>

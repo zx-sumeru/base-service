@@ -1,0 +1,18 @@
+server:
+  port: 8762
+
+eureka:
+  instance:
+    hostname: host2
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/, http://localhost:8763/eureka/
+
+
+spring.cloud.config.discovery.enabled: true
+
+spring:
+  application:
+    name: eureka2
