@@ -1,0 +1,19 @@
+server:
+  port: 8989
+management:
+  server:
+    port: 8990
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    non-secure-port: ${server.port}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+turbine:
+  app-config: ms-config
+  aggregator:
+    cluster-config: default
+  cluster-name-expression: new String("default")

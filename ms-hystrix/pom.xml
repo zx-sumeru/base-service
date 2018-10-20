@@ -11,5 +11,23 @@
 
     <artifactId>ms-hystrix</artifactId>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-hystrix-dashboard</artifactId>
+            <!--<version></version>-->
+        </dependency>
+
+         <!--https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-hystrix-dashboard-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>-->
+            <!--<version>1.4.5.RELEASE</version>-->
+        <!--</dependency>-->
+
+
+    </dependencies>
+
 
 </project>

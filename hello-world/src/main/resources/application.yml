@@ -1,0 +1,12 @@
+
+
+server:
+  port: 9101
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8765/eureka/
+  instance:
+    prefer-ip-address: true
+
+debug: true

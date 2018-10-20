@@ -6,11 +6,11 @@ spring:
     config:
       server:
         git:
-          uri:
-          username:
-          password:
+          uri: https://github.com/zx-sumeru/config-server.git
+          username: zx-sumeru
+          password: 199152love
 
   rabbitmq:
-    addresses:
-    username:
-    password:
+    addresses: amqp://localhost:5672
+    username: guest
+    password: guest

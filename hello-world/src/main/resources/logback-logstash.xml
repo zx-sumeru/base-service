@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="stash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+		<destination>192.168.1.25:5000</destination>
+		<encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder"></encoder>
+	</appender>
+
+	<appender name="async" class="ch.qos.logback.classic.AsyncAppender">
+		<appender-ref ref="stash" />
+	</appender>
+
+	<root level="info">
+		<appender-ref ref="stash" />
+	</root>
+</configuration>
+

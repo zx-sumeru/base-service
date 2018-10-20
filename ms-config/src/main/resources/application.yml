@@ -8,6 +8,7 @@ eureka:
   instance:
     prefer-ip-address: true
 
+# 已取消
 management:
   security:
     enabled: false
